@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+    color: #2f2f2f;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 20rem;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #2f2f2f;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+    padding: 2rem;
+    gap: 1rem;
+    border-bottom: 2px solid rgba(47, 47, 47, 0.5);
+    background-color: #2f2f2f;
+    z-index: 10;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #f7f8fa;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #f7f8fa;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.nav-link:active,
+.nav-link:visited {
+    color: #f7f8fa;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 2rem 0;
+    margin-top: 6rem;
+    padding: 1rem;
+    background-color: #e5e7eb;
+}
+
+.about-header {
+    width: 100%;
+    text-align: center;
+}
+
+.bth-link {
+    text-decoration: underline;
+    color: #2f2f2f;
+}
+
+.bth-link:hover {
+    color: #5e5e5e;
+    cursor: pointer;
+}
+
+.about-image-container {
+    width: 40%;
+}
+
+.about-image-container>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.about-text-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 2rem;
+}
+
+.about-text-container>p {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.main>header {
+    width: 100%;
+}
+
+.report-header {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.kmom-nav {
+    width: 20%;
+    min-width: 20%;
+    height: 100%;
+}
+
+.kmom-nav>ul {
+    padding: 1rem;
+    list-style-type: none;
+    height: 100%;
+}
+
+.kmom-li {
+    margin: 1rem 0;
+    padding: 1rem;
+    color: #e5e7eb;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #2f2f2f;
+}
+
+.kmom-li:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.kmom-content {
+    width: 80%;
+    padding: 2rem 0;
+
+}
+
+.kmom-text-container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #2f2f2f;
+    border-radius: 5px;
+}
+
+.kmom-text-container > h3 {
+    margin: 0.5rem 0 0.5rem;
+}
+
+
+.kmom-content section:nth-of-type(even) h2 {
+    color: #5c5a5a;
+  }
+
+.hide-kmom {
+    display: none;
+}
+
+.show-kmom {
+    display: block;
+}
+
+.arrow {
+    color: #e5e7eb;
+    cursor: pointer;
+    margin-left: 0.25rem;
+    font-size: 1rem;
+
+}
+
+.about-main {
+    display:flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-top: 6rem;
+    background-color: #e5e7eb;
+    background-image: url("/img/data-storage.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.about-content-container {
+    width: 80%;
+    height: fit-content;
+    margin-top: calc(20% + 6rem);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+.about-content-container > p {
+    color: #2f2f2f;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.github-logo {
+    width: 20px;
+    height: 20px;
+    fill: #000;
+    transition: fill 0.2s;
+  }
+
+  .github-logo:hover {
+    fill: #555;
+  }
+  
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    height: 5rem;
+    min-height: 5rem;
+  }
+
+  footer > p {
+    width: 100%;
+    color: #e5e7eb;
+    text-align: center;
+  }
